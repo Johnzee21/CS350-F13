@@ -1,0 +1,282 @@
+Script started on Thu 12 Sep 2013 09:24:42 AM EDT
+1%>linux032:[1m~/cs350-os161[0m>  cd ~/cs350-os161/os161-1.99/kern/startup
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/startup[0m> cvs add hello.c
+cvs add: `hello.c' already exists, with version number 1.1
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/startup[0m> cvs diff -c main.c
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/startup[0m> cd ..
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern[0m> cvs commit -m "added hello function t o the boot sequence"
+cvs commit: Examining .
+cvs commit: Examining arch
+cvs commit: Examining arch/mips
+cvs commit: Examining arch/mips/conf
+cvs commit: Examining arch/mips/include
+cvs commit: Examining arch/mips/include/kern
+cvs commit: Examining arch/mips/locore
+cvs commit: Examining arch/mips/syscall
+cvs commit: Examining arch/mips/thread
+cvs commit: Examining arch/mips/vm
+cvs commit: Examining arch/sys161
+cvs commit: Examining arch/sys161/conf
+cvs commit: Examining arch/sys161/dev
+cvs commit: Examining arch/sys161/include
+cvs commit: Examining arch/sys161/startup
+cvs commit: Examining compile
+cvs commit: Examining conf
+cvs commit: Examining dev
+cvs commit: Examining dev/generic
+cvs commit: Examining dev/lamebus
+cvs commit: Examining fs
+cvs commit: Examining fs/sfs
+cvs commit: Examining include
+cvs commit: Examining include/kern
+cvs commit: Examining lib
+cvs commit: Examining proc
+cvs commit: Examining startup
+cvs commit: Examining synchprobs
+cvs commit: Examining syscall
+cvs commit: Examining test
+cvs commit: Examining thread
+cvs commit: Examining vfs
+cvs commit: Examining vm
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern[0m> j[Kls
+arch   compile	CVS  fs       lib	proc	 synchprobs  test    vfs
+build  conf	dev  include  Makefile	startup  syscall     thread  vm
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern[0m> cd compile/
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/compile[0m> cdA[K a[KASST0/
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/compile/ASST0[0m> ls
+adddi3.o	   iordi3.o	      opt-A3.h		strtok_r.o
+anddi3.o	   kernel	      opt-A4.h		subdi3.o
+array.o		   kgets.o	      opt-A5.h		switchframe.o
+arraytest.o	   kmalloc.o	      opt-dumbvm.h	switch.o
+ashldi3.o	   kprintf.o	      opt-netfs.h	synch.o
+ashrdi3.o	   lamebus_machdep.o  opt-net.h		synchtest.o
+atoi.o		   lamebus.o	      opt-noasserts.h	syscall.o
+autoconf.c	   lhd_att.o	      opt-sfs.h		threadlist.o
+autoconf.h	   lhd.o	      opt-synchprobs.h	thread_machdep.o
+autoconf.o	   loadelf.o	      opt-vm.h		thread.o
+beep_ltimer.o	   lrandom_att.o      __printf.o	threadstart.o
+beep.o		   lrandom.o	      proc.o		threadtest.o
+bitmap.o	   lser_att.o	      qdivrem.o		time_syscalls.o
+bitmaptest.o	   lser.o	      queue.o		tlb-mips1.o
+bswap.o		   lshldi3.o	      ram.o		trap.o
+bzero.o		   lshrdi3.o	      random_lrandom.o	tt3.o
+cache-mips161.o    ltimer_att.o       random.o		ucmpdi2.o
+clock.o		   ltimer.o	      rtclock_ltimer.o	udivdi3.o
+cmpdi2.o	   ltrace_att.o       rtclock.o		uio.o
+con_lser.o	   ltrace.o	      runprogram.o	umoddi3.o
+console.o	   main.o	      setjmp.o		uw-tests.o
+copyinout.o	   Makefile	      sfs_fs.o		uw-vmstats.o
+cpu.o		   malloctest.o       sfs_io.o		vers.c
+device.o	   memcpy.o	      sfs_vnode.o	version
+devnull.o	   memmove.o	      snprintf.o	vers.o
+divdi3.o	   menu.o	      spinlock.o	vfscwd.o
+dumbvm.o	   misc.o	      spl.o		vfslist.o
+emu_att.o	   moddi3.o	      start.o		vfslookup.o
+emu.o		   muldi3.o	      strcat.o		vfspath.o
+exception-mips1.o  negdi2.o	      strchr.o		vnode.o
+files.mk	   notdi2.o	      strcmp.o		xordi3.o
+fstest.o	   opt-A0.h	      strcpy.o
+hello.o		   opt-A1.h	      strlen.o
+includelinks	   opt-A2.h	      strrchr.o
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/compile/ASST0[0m> bmake
+cs350-gcc -g -Wall -W -Wwrite-strings -Wmissing-prototypes -Werror -std=gnu99 -mno-abicalls -fno-pic -ffixed-23 -nostdinc -I../../include -I../../dev -I. -Iincludelinks -ffreestanding -D_KERNEL -DUW -c ../../startup/main.c
+../../startup/main.c:1: error: expected declaration specifiers or ‘...’ before string constant
+cc1: warnings being treated as errors
+../../startup/main.c:1: warning: data definition has no type or storage class
+../../startup/main.c:1: warning: type defaults to ‘int’ in declaration of ‘kprintf’
+../../startup/main.c:3: error: expected declaration specifiers or ‘...’ before string constant
+../../startup/main.c:4: error: expected declaration specifiers or ‘...’ before ‘GROUP_VERSION’
+../../startup/main.c:4: error: expected declaration specifiers or ‘...’ before ‘buildconfig’
+../../startup/main.c:4: error: expected declaration specifiers or ‘...’ before ‘buildversion’
+../../startup/main.c:4: warning: data definition has no type or storage class
+../../startup/main.c:4: warning: type defaults to ‘int’ in declaration of ‘kprintf’
+../../startup/main.c:5: error: expected declaration specifiers or ‘...’ before string constant
+../../startup/main.c:5: warning: data definition has no type or storage class
+../../startup/main.c:5: warning: type defaults to ‘int’ in declaration of ‘kprintf’
+../../startup/main.c:8: warning: data definition has no type or storage class
+../../startup/main.c:8: warning: type defaults to ‘int’ in declaration of ‘ram_bootstrap’
+../../startup/main.c:9: warning: data definition has no type or storage class
+../../startup/main.c:9: warning: type defaults to ‘int’ in declaration of ‘proc_bootstrap’
+../../startup/main.c:10: warning: data definition has no type or storage class
+../../startup/main.c:10: warning: type defaults to ‘int’ in declaration of ‘thread_bootstrap’
+../../startup/main.c:11: warning: data definition has no type or storage class
+../../startup/main.c:11: warning: type defaults to ‘int’ in declaration of ‘hardclock_bootstrap’
+../../startup/main.c:12: warning: data definition has no type or storage class
+../../startup/main.c:12: warning: type defaults to ‘int’ in declaration of ‘vfs_bootstrap’
+../../startup/main.c:15: error: expected declaration specifiers or ‘...’ before string constant
+../../startup/main.c:15: warning: data definition has no type or storage class
+../../startup/main.c:15: warning: type defaults to ‘int’ in declaration of ‘kprintf’
+../../startup/main.c:16: error: expected ‘)’ before ‘->’ token
+../../startup/main.c:17: warning: data definition has no type or storage class
+../../startup/main.c:17: warning: type defaults to ‘int’ in declaration of ‘mainbus_bootstrap’
+../../startup/main.c:18: error: expected ‘)’ before ‘->’ token
+../../startup/main.c:20: warning: data definition has no type or storage class
+../../startup/main.c:20: warning: type defaults to ‘int’ in declaration of ‘pseudoconfig’
+../../startup/main.c:21: error: expected declaration specifiers or ‘...’ before string constant
+../../startup/main.c:21: warning: data definition has no type or storage class
+../../startup/main.c:21: warning: type defaults to ‘int’ in declaration of ‘kprintf’
+../../startup/main.c:24: warning: data definition has no type or storage class
+../../startup/main.c:24: warning: type defaults to ‘int’ in declaration of ‘vm_bootstrap’
+../../startup/main.c:25: warning: data definition has no type or storage class
+../../startup/main.c:25: warning: type defaults to ‘int’ in declaration of ‘kprintf_bootstrap’
+../../startup/main.c:26: warning: data definition has no type or storage class
+../../startup/main.c:26: warning: type defaults to ‘int’ in declaration of ‘thread_start_cpus’
+../../startup/main.c:29: error: expected declaration specifiers or ‘...’ before string constant
+../../startup/main.c:29: warning: data definition has no type or storage class
+../../startup/main.c:29: warning: type defaults to ‘int’ in declaration of ‘vfs_setbootfs’
+../../startup/main.c:37: error: expected declaration specifiers or ‘...’ before ‘sizeof’
+../../startup/main.c:37: warning: data definition has no type or storage class
+../../startup/main.c:37: warning: type defaults to ‘int’ in declaration of ‘COMPILE_ASSERT’
+../../startup/main.c:38: error: expected declaration specifiers or ‘...’ before ‘sizeof’
+../../startup/main.c:38: warning: data definition has no type or storage class
+../../startup/main.c:38: warning: type defaults to ‘int’ in declaration of ‘COMPILE_ASSERT’
+../../startup/main.c:39: error: expected identifier or ‘(’ before ‘}’ token
+../../startup/main.c: In function ‘shutdown’:
+../../startup/main.c:50: warning: implicit declaration of function ‘vfs_clearbootfs’
+../../startup/main.c:51: warning: implicit declaration of function ‘vfs_clearcurdir’
+../../startup/main.c:52: warning: implicit declaration of function ‘vfs_unmountall’
+../../startup/main.c:54: warning: implicit declaration of function ‘thread_shutdown’
+../../startup/main.c:56: warning: implicit declaration of function ‘splhigh’
+../../startup/main.c: At top level:
+../../startup/main.c:70: warning: no previous prototype for ‘sys_reboot’
+../../startup/main.c: In function ‘sys_reboot’:
+../../startup/main.c:72: error: ‘RB_REBOOT’ undeclared (first use in this function)
+../../startup/main.c:72: error: (Each undeclared identifier is reported only once
+../../startup/main.c:72: error: for each function it appears in.)
+../../startup/main.c:73: error: ‘RB_HALT’ undeclared (first use in this function)
+../../startup/main.c:74: error: ‘RB_POWEROFF’ undeclared (first use in this function)
+../../startup/main.c:77: error: ‘EINVAL’ undeclared (first use in this function)
+../../startup/main.c:85: warning: implicit declaration of function ‘mainbus_halt’
+../../startup/main.c:89: warning: implicit declaration of function ‘mainbus_reboot’
+../../startup/main.c:93: warning: implicit declaration of function ‘mainbus_poweroff’
+../../startup/main.c:97: warning: implicit declaration of function ‘panic’
+../../startup/main.c: At top level:
+../../startup/main.c:107: warning: no previous prototype for ‘kmain’
+../../startup/main.c: In function ‘kmain’:
+../../startup/main.c:108: warning: implicit declaration of function ‘boot’
+../../startup/main.c:110: warning: implicit declaration of function ‘menu’
+*** Error code 1
+
+Stop.
+bmake: stopped in /u4/y88huang/cs350-os161/os161-1.99/kern/compile/ASST0
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/compile/ASST0[0m> bmake depend
+bmake includelinks
+`includelinks' is up to date.
+cs350-gcc -g -Wall -W -Wwrite-strings -Wmissing-prototypes -Werror -std=gnu99 -mno-abicalls -fno-pic -ffixed-23 -nostdinc -I../../include -I../../dev -I. -Iincludelinks -ffreestanding -D_KERNEL -DUW -M ../../../common/libc/printf/__printf.c ../../../common/libc/printf/snprintf.c ../../../common/libc/stdlib/atoi.c ../../../common/libc/string/bzero.c ../../../common/libc/string/memcpy.c ../../../common/libc/string/memmove.c ../../../common/libc/string/strcat.c ../../../common/libc/string/strchr.c ../../../common/libc/string/strcmp.c ../../../common/libc/string/strcpy.c ../../../common/libc/string/strlen.c ../../../common/libc/string/strrchr.c ../../../common/libc/string/strtok_r.c ../../compile/ASST0/autoconf.c ../../dev/generic/beep.c ../../dev/generic/console.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/emu.c ../../dev/lamebus/lamebus.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/lhd.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lser.c ../../dev/lamebus/ltimer_att.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/rtclock_ltimer.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_vnode.c ../../lib/array.c ../../lib/bitmap.c ../../lib/bswap.c ../../lib/kgets.c ../../lib/kprintf.c ../../lib/misc.c ../../lib/queue.c ../../lib/uio.c ../../proc/proc.c ../../startup/hello.c ../../startup/main.c ../../startup/menu.c ../../syscall/loadelf.c ../../syscall/runprogram.c ../../syscall/time_syscalls.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/fstest.c ../../test/malloctest.c ../../test/synchtest.c ../../test/threadtest.c ../../test/tt3.c ../../test/uw-tests.c ../../thread/clock.c ../../thread/spinlock.c ../../thread/spl.c ../../thread/synch.c ../../thread/thread.c ../../thread/threadlist.c ../../vfs/device.c ../../vfs/devnull.c ../../vfs/vfscwd.c ../../vfs/vfslist.c ../../vfs/vfslookup.c ../../vfs/vfspath.c ../../vfs/vnode.c ../../vm/kmalloc.c ../../vm/uw-vmstats.c ../../arch/mips/locore/trap.c ../../arch/mips/syscall/syscall.c ../../arch/mips/thread/cpu.c ../../arch/mips/thread/switchframe.c ../../arch/mips/thread/switch.S ../../arch/mips/thread/thread_machdep.c ../../arch/mips/thread/threadstart.S ../../arch/mips/vm/dumbvm.c ../../arch/mips/vm/ram.c ../../../common/gcc-millicode/adddi3.c ../../../common/gcc-millicode/anddi3.c ../../../common/gcc-millicode/ashldi3.c ../../../common/gcc-millicode/ashrdi3.c ../../../common/gcc-millicode/cmpdi2.c ../../../common/gcc-millicode/divdi3.c ../../../common/gcc-millicode/iordi3.c ../../../common/gcc-millicode/lshldi3.c ../../../common/gcc-millicode/lshrdi3.c ../../../common/gcc-millicode/moddi3.c ../../../common/gcc-millicode/muldi3.c ../../../common/gcc-millicode/negdi2.c ../../../common/gcc-millicode/notdi2.c ../../../common/gcc-millicode/qdivrem.c ../../../common/gcc-millicode/subdi3.c ../../../common/gcc-millicode/ucmpdi2.c ../../../common/gcc-millicode/udivdi3.c ../../../common/gcc-millicode/umoddi3.c ../../../common/gcc-millicode/xordi3.c ../../../common/libc/arch/mips/setjmp.S ../../vm/copyinout.c ../../arch/mips/locore/cache-mips161.S ../../arch/mips/locore/exception-mips1.S ../../arch/mips/vm/tlb-mips1.S ../../arch/sys161/dev/lamebus_machdep.c ../../arch/sys161/startup/start.S > .depend
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/compile/ASST0[0m> bmake
+cs350-gcc -g -Wall -W -Wwrite-strings -Wmissing-prototypes -Werror -std=gnu99 -mno-abicalls -fno-pic -ffixed-23 -nostdinc -I../../include -I../../dev -I. -Iincludelinks -ffreestanding -D_KERNEL -DUW -c ../../startup/main.c
+../../startup/main.c:1: error: expected declaration specifiers or ‘...’ before string constant
+cc1: warnings being treated as errors
+../../startup/main.c:1: warning: data definition has no type or storage class
+../../startup/main.c:1: warning: type defaults to ‘int’ in declaration of ‘kprintf’
+../../startup/main.c:3: error: expected declaration specifiers or ‘...’ before string constant
+../../startup/main.c:4: error: expected declaration specifiers or ‘...’ before ‘GROUP_VERSION’
+../../startup/main.c:4: error: expected declaration specifiers or ‘...’ before ‘buildconfig’
+../../startup/main.c:4: error: expected declaration specifiers or ‘...’ before ‘buildversion’
+../../startup/main.c:4: warning: data definition has no type or storage class
+../../startup/main.c:4: warning: type defaults to ‘int’ in declaration of ‘kprintf’
+../../startup/main.c:5: error: expected declaration specifiers or ‘...’ before string constant
+../../startup/main.c:5: warning: data definition has no type or storage class
+../../startup/main.c:5: warning: type defaults to ‘int’ in declaration of ‘kprintf’
+../../startup/main.c:8: warning: data definition has no type or storage class
+../../startup/main.c:8: warning: type defaults to ‘int’ in declaration of ‘ram_bootstrap’
+../../startup/main.c:9: warning: data definition has no type or storage class
+../../startup/main.c:9: warning: type defaults to ‘int’ in declaration of ‘proc_bootstrap’
+../../startup/main.c:10: warning: data definition has no type or storage class
+../../startup/main.c:10: warning: type defaults to ‘int’ in declaration of ‘thread_bootstrap’
+../../startup/main.c:11: warning: data definition has no type or storage class
+../../startup/main.c:11: warning: type defaults to ‘int’ in declaration of ‘hardclock_bootstrap’
+../../startup/main.c:12: warning: data definition has no type or storage class
+../../startup/main.c:12: warning: type defaults to ‘int’ in declaration of ‘vfs_bootstrap’
+../../startup/main.c:15: error: expected declaration specifiers or ‘...’ before string constant
+../../startup/main.c:15: warning: data definition has no type or storage class
+../../startup/main.c:15: warning: type defaults to ‘int’ in declaration of ‘kprintf’
+../../startup/main.c:16: error: expected ‘)’ before ‘->’ token
+../../startup/main.c:17: warning: data definition has no type or storage class
+../../startup/main.c:17: warning: type defaults to ‘int’ in declaration of ‘mainbus_bootstrap’
+../../startup/main.c:18: error: expected ‘)’ before ‘->’ token
+../../startup/main.c:20: warning: data definition has no type or storage class
+../../startup/main.c:20: warning: type defaults to ‘int’ in declaration of ‘pseudoconfig’
+../../startup/main.c:21: error: expected declaration specifiers or ‘...’ before string constant
+../../startup/main.c:21: warning: data definition has no type or storage class
+../../startup/main.c:21: warning: type defaults to ‘int’ in declaration of ‘kprintf’
+../../startup/main.c:24: warning: data definition has no type or storage class
+../../startup/main.c:24: warning: type defaults to ‘int’ in declaration of ‘vm_bootstrap’
+../../startup/main.c:25: warning: data definition has no type or storage class
+../../startup/main.c:25: warning: type defaults to ‘int’ in declaration of ‘kprintf_bootstrap’
+../../startup/main.c:26: warning: data definition has no type or storage class
+../../startup/main.c:26: warning: type defaults to ‘int’ in declaration of ‘thread_start_cpus’
+../../startup/main.c:29: error: expected declaration specifiers or ‘...’ before string constant
+../../startup/main.c:29: warning: data definition has no type or storage class
+../../startup/main.c:29: warning: type defaults to ‘int’ in declaration of ‘vfs_setbootfs’
+../../startup/main.c:37: error: expected declaration specifiers or ‘...’ before ‘sizeof’
+../../startup/main.c:37: warning: data definition has no type or storage class
+../../startup/main.c:37: warning: type defaults to ‘int’ in declaration of ‘COMPILE_ASSERT’
+../../startup/main.c:38: error: expected declaration specifiers or ‘...’ before ‘sizeof’
+../../startup/main.c:38: warning: data definition has no type or storage class
+../../startup/main.c:38: warning: type defaults to ‘int’ in declaration of ‘COMPILE_ASSERT’
+../../startup/main.c:39: error: expected identifier or ‘(’ before ‘}’ token
+../../startup/main.c: In function ‘shutdown’:
+../../startup/main.c:50: warning: implicit declaration of function ‘vfs_clearbootfs’
+../../startup/main.c:51: warning: implicit declaration of function ‘vfs_clearcurdir’
+../../startup/main.c:52: warning: implicit declaration of function ‘vfs_unmountall’
+../../startup/main.c:54: warning: implicit declaration of function ‘thread_shutdown’
+../../startup/main.c:56: warning: implicit declaration of function ‘splhigh’
+../../startup/main.c: At top level:
+../../startup/main.c:70: warning: no previous prototype for ‘sys_reboot’
+../../startup/main.c: In function ‘sys_reboot’:
+../../startup/main.c:72: error: ‘RB_REBOOT’ undeclared (first use in this function)
+../../startup/main.c:72: error: (Each undeclared identifier is reported only once
+../../startup/main.c:72: error: for each function it appears in.)
+../../startup/main.c:73: error: ‘RB_HALT’ undeclared (first use in this function)
+../../startup/main.c:74: error: ‘RB_POWEROFF’ undeclared (first use in this function)
+../../startup/main.c:77: error: ‘EINVAL’ undeclared (first use in this function)
+../../startup/main.c:85: warning: implicit declaration of function ‘mainbus_halt’
+../../startup/main.c:89: warning: implicit declaration of function ‘mainbus_reboot’
+../../startup/main.c:93: warning: implicit declaration of function ‘mainbus_poweroff’
+../../startup/main.c:97: warning: implicit declaration of function ‘panic’
+../../startup/main.c: At top level:
+../../startup/main.c:107: warning: no previous prototype for ‘kmain’
+../../startup/main.c: In function ‘kmain’:
+../../startup/main.c:108: warning: implicit declaration of function ‘boot’
+../../startup/main.c:110: warning: implicit declaration of function ‘menu’
+*** Error code 1
+
+Stop.
+bmake: stopped in /u4/y88huang/cs350-os161/os161-1.99/kern/compile/ASST0
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/compile/ASST0[0m> cd ..
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/compile[0m> ls
+ASST0  CVS
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/compile[0m> cd ..
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern[0m> cd[K[Kcd s
+startup/    synchprobs/ syscall/    
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern[0m> cd startup/
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/startup[0m> rm  main.c
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/startup[0m> cvs update -d main.c
+cvs update: warning: `main.c' was lost
+U main.c
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/startup[0m> cd ..
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern[0m> cd A[KA[Kcompile/ASST0/
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/compile/ASST0[0m> bmake
+cs350-gcc -g -Wall -W -Wwrite-strings -Wmissing-prototypes -Werror -std=gnu99 -mno-abicalls -fno-pic -ffixed-23 -nostdinc -I../../include -I../../dev -I. -Iincludelinks -ffreestanding -D_KERNEL -DUW -c ../../startup/main.c
+../../conf/newvers.sh ASST0
+*** This is ASST0 build #3 ***
+cs350-gcc -g -Wall -W -Wwrite-strings -Wmissing-prototypes -Werror -std=gnu99 -mno-abicalls -fno-pic -ffixed-23 -nostdinc -I../../include -I../../dev -I. -Iincludelinks -ffreestanding -D_KERNEL -DUW -c vers.c
+cs350-ld   -nostdlib -T ../../arch/mips/conf/ldscript __printf.o snprintf.o atoi.o bzero.o memcpy.o memmove.o strcat.o strchr.o strcmp.o strcpy.o strlen.o strrchr.o strtok_r.o autoconf.o beep.o console.o random.o rtclock.o beep_ltimer.o con_lser.o emu_att.o emu.o lamebus.o lhd_att.o lhd.o lrandom_att.o lrandom.o lser_att.o lser.o ltimer_att.o ltimer.o ltrace_att.o ltrace.o random_lrandom.o rtclock_ltimer.o sfs_fs.o sfs_io.o sfs_vnode.o array.o bitmap.o bswap.o kgets.o kprintf.o misc.o queue.o uio.o proc.o hello.o main.o menu.o loadelf.o runprogram.o time_syscalls.o arraytest.o bitmaptest.o fstest.o malloctest.o synchtest.o threadtest.o tt3.o uw-tests.o clock.o spinlock.o spl.o synch.o thread.o threadlist.o device.o devnull.o vfscwd.o vfslist.o vfslookup.o vfspath.o vnode.o kmalloc.o uw-vmstats.o trap.o syscall.o cpu.o switchframe.o switch.o thread_machdep.o threadstart.o dumbvm.o ram.o adddi3.o anddi3.o ashldi3.o ashrdi3.o cmpdi2.o divdi3.o iordi3.o lshldi3.o lshrdi3.o moddi3.o muldi3.o negdi2.o notdi2.o qdivrem.o subdi3.o ucmpdi2.o udivdi3.o umoddi3.o xordi3.o setjmp.o copyinout.o cache-mips161.o exception-mips1.o tlb-mips1.o lamebus_machdep.o start.o vers.o -o kernel
+cs350-size kernel
+   text	   data	    bss	    dec	    hex	filename
+ 189848	    464	   7804	 198116	  305e4	kernel
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/compile/ASST0[0m> exit[K[K[K[Kbmake depend
+bmake includelinks
+`includelinks' is up to date.
+cs350-gcc -g -Wall -W -Wwrite-strings -Wmissing-prototypes -Werror -std=gnu99 -mno-abicalls -fno-pic -ffixed-23 -nostdinc -I../../include -I../../dev -I. -Iincludelinks -ffreestanding -D_KERNEL -DUW -M ../../../common/libc/printf/__printf.c ../../../common/libc/printf/snprintf.c ../../../common/libc/stdlib/atoi.c ../../../common/libc/string/bzero.c ../../../common/libc/string/memcpy.c ../../../common/libc/string/memmove.c ../../../common/libc/string/strcat.c ../../../common/libc/string/strchr.c ../../../common/libc/string/strcmp.c ../../../common/libc/string/strcpy.c ../../../common/libc/string/strlen.c ../../../common/libc/string/strrchr.c ../../../common/libc/string/strtok_r.c ../../compile/ASST0/autoconf.c ../../dev/generic/beep.c ../../dev/generic/console.c ../../dev/generic/random.c ../../dev/generic/rtclock.c ../../dev/lamebus/beep_ltimer.c ../../dev/lamebus/con_lser.c ../../dev/lamebus/emu_att.c ../../dev/lamebus/emu.c ../../dev/lamebus/lamebus.c ../../dev/lamebus/lhd_att.c ../../dev/lamebus/lhd.c ../../dev/lamebus/lrandom_att.c ../../dev/lamebus/lrandom.c ../../dev/lamebus/lser_att.c ../../dev/lamebus/lser.c ../../dev/lamebus/ltimer_att.c ../../dev/lamebus/ltimer.c ../../dev/lamebus/ltrace_att.c ../../dev/lamebus/ltrace.c ../../dev/lamebus/random_lrandom.c ../../dev/lamebus/rtclock_ltimer.c ../../fs/sfs/sfs_fs.c ../../fs/sfs/sfs_io.c ../../fs/sfs/sfs_vnode.c ../../lib/array.c ../../lib/bitmap.c ../../lib/bswap.c ../../lib/kgets.c ../../lib/kprintf.c ../../lib/misc.c ../../lib/queue.c ../../lib/uio.c ../../proc/proc.c ../../startup/hello.c ../../startup/main.c ../../startup/menu.c ../../syscall/loadelf.c ../../syscall/runprogram.c ../../syscall/time_syscalls.c ../../test/arraytest.c ../../test/bitmaptest.c ../../test/fstest.c ../../test/malloctest.c ../../test/synchtest.c ../../test/threadtest.c ../../test/tt3.c ../../test/uw-tests.c ../../thread/clock.c ../../thread/spinlock.c ../../thread/spl.c ../../thread/synch.c ../../thread/thread.c ../../thread/threadlist.c ../../vfs/device.c ../../vfs/devnull.c ../../vfs/vfscwd.c ../../vfs/vfslist.c ../../vfs/vfslookup.c ../../vfs/vfspath.c ../../vfs/vnode.c ../../vm/kmalloc.c ../../vm/uw-vmstats.c ../../arch/mips/locore/trap.c ../../arch/mips/syscall/syscall.c ../../arch/mips/thread/cpu.c ../../arch/mips/thread/switchframe.c ../../arch/mips/thread/switch.S ../../arch/mips/thread/thread_machdep.c ../../arch/mips/thread/threadstart.S ../../arch/mips/vm/dumbvm.c ../../arch/mips/vm/ram.c ../../../common/gcc-millicode/adddi3.c ../../../common/gcc-millicode/anddi3.c ../../../common/gcc-millicode/ashldi3.c ../../../common/gcc-millicode/ashrdi3.c ../../../common/gcc-millicode/cmpdi2.c ../../../common/gcc-millicode/divdi3.c ../../../common/gcc-millicode/iordi3.c ../../../common/gcc-millicode/lshldi3.c ../../../common/gcc-millicode/lshrdi3.c ../../../common/gcc-millicode/moddi3.c ../../../common/gcc-millicode/muldi3.c ../../../common/gcc-millicode/negdi2.c ../../../common/gcc-millicode/notdi2.c ../../../common/gcc-millicode/qdivrem.c ../../../common/gcc-millicode/subdi3.c ../../../common/gcc-millicode/ucmpdi2.c ../../../common/gcc-millicode/udivdi3.c ../../../common/gcc-millicode/umoddi3.c ../../../common/gcc-millicode/xordi3.c ../../../common/libc/arch/mips/setjmp.S ../../vm/copyinout.c ../../arch/mips/locore/cache-mips161.S ../../arch/mips/locore/exception-mips1.S ../../arch/mips/vm/tlb-mips1.S ../../arch/sys161/dev/lamebus_machdep.c ../../arch/sys161/startup/start.S > .depend
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/compile/ASST0[0m> bmake
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/compile/ASST0[0m> bmake install
+[ -d /u4/y88huang/cs350-os161/root ] || mkdir /u4/y88huang/cs350-os161/root
+cp kernel /u4/y88huang/cs350-os161/root/kernel-ASST0
+rm -f /u4/y88huang/cs350-os161/root/kernel
+ln -s kernel-ASST0 /u4/y88huang/cs350-os161/root/kernel
+1%>linux032:[1m~/cs350-os161/os161-1.99/kern/compile/ASST0[0m> exit
+exit
+
+Script done on Thu 12 Sep 2013 09:29:32 AM EDT

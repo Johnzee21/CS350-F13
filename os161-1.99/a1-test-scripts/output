@@ -1,0 +1,35 @@
+./run-batch
+Starting ./run-by-config Version Created Fall 13: v1.0 at: Tue Oct  8 14:59:49 EDT 2013
+######################################################################
+./run-on-configs uw1.cmds sys161-512K-1P.conf sys161-512K-4P.conf sys161-512K-8P.conf
+========================== Using parameters "uw1;q" =================================
+Started runs at: Tue Oct  8 14:59:49 EDT 2013
+sys161 -c sys161-512K-1P.conf kernel "uw1;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #71)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+OS/161 kernel: uw1
+Starting uwlocktest1...
+value of test_value = 0 should be 0
+TEST SUCCEEDED
+cleanitems: Destroying sems and locks
+uwlocktest1 done.
+Operation took 23.330585560 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+sys161: 587773261 cycles (587773261 run, 0 global-idle)
+sys161:   cpu0: 587773261 kern, 0 user, 0 idle)
+sys161: 234792 irqs 0 exns 0r/0w disk 1r/755w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 25.504720 seconds (23.0457 mhz)
+sys161: Elapsed virtual time: 23.510930440 seconds (25 mhz)
+
+sys161 -c sys161-512K-4P.conf kernel "uw1;q"
+
+
+
+

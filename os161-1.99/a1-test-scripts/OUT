@@ -1,0 +1,2277 @@
+./run-batch
+Starting ./run-by-config Version Created Fall 13: v1.0 at: Tue Oct  8 15:36:11 EDT 2013
+######################################################################
+./run-on-configs uw1.cmds sys161-512K-1P.conf sys161-512K-4P.conf sys161-512K-8P.conf
+========================== Using parameters "uw1;q" =================================
+Started runs at: Tue Oct  8 15:36:11 EDT 2013
+sys161 -c sys161-512K-1P.conf kernel "uw1;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+OS/161 kernel: uw1
+Starting uwlocktest1...
+value of test_value = 0 should be 0
+TEST SUCCEEDED
+cleanitems: Destroying sems and locks
+uwlocktest1 done.
+Operation took 23.360022200 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+sys161: 588515766 cycles (588515766 run, 0 global-idle)
+sys161:   cpu0: 588515766 kern, 0 user, 0 idle)
+sys161: 235094 irqs 0 exns 0r/0w disk 0r/755w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 25.331198 seconds (23.2328 mhz)
+sys161: Elapsed virtual time: 23.540630640 seconds (25 mhz)
+
+sys161 -c sys161-512K-4P.conf kernel "uw1;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: uw1
+Starting uwlocktest1...
+value of test_value = 0 should be 0
+TEST SUCCEEDED
+cleanitems: Destroying sems and locks
+uwlocktest1 done.
+Operation took 9.706198600 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
+The system is halted.
+sys161: 247359745 cycles (247359745 run, 0 global-idle)
+sys161:   cpu0: 181408439 kern, 0 user, 65951306 idle)
+sys161:   cpu1: 167772334 kern, 0 user, 79587411 idle)
+sys161:   cpu2: 149794404 kern, 0 user, 97565341 idle)
+sys161:   cpu3: 122571724 kern, 0 user, 124788021 idle)
+sys161: 290784 irqs 0 exns 0r/0w disk 0r/850w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 27.793666 seconds (8.89986 mhz)
+sys161: Elapsed virtual time: 9.894389800 seconds (25 mhz)
+
+sys161 -c sys161-512K-8P.conf kernel "uw1;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+cpu4: MIPS r3000
+cpu5: MIPS r3000
+cpu6: MIPS r3000
+cpu7: MIPS r3000
+OS/161 kernel: uw1
+Starting uwlocktest1...
+value of test_value = 0 should be 0
+TEST SUCCEEDED
+cleanitems: Destroying sems and locks
+uwlocktest1 done.
+Operation took 9.136082840 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu5: offline.
+cpu2: offline.
+cpu1: offline.
+cpu7: offline.
+cpu4: offline.
+The system is halted.
+cpu6: offline.
+sys161: 233580157 cycles (233580157 run, 0 global-idle)
+sys161:   cpu0: 149977043 kern, 0 user, 83603114 idle)
+sys161:   cpu1: 137418235 kern, 0 user, 96161922 idle)
+sys161:   cpu2: 118062856 kern, 0 user, 115517301 idle)
+sys161:   cpu3: 92132944 kern, 0 user, 141447213 idle)
+sys161:   cpu4: 87492690 kern, 0 user, 146087467 idle)
+sys161:   cpu5: 84782257 kern, 0 user, 148797900 idle)
+sys161:   cpu6: 333675 kern, 0 user, 233246482 idle)
+sys161:   cpu7: 332962 kern, 0 user, 233247195 idle)
+sys161: 320127 irqs 0 exns 0r/0w disk 0r/978w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 34.629650 seconds (6.74509 mhz)
+sys161: Elapsed virtual time: 9.343206280 seconds (25 mhz)
+
+Ended runs at: Tue Oct  8 15:37:39 EDT 2013
+
+========================== Using parameters "uw1;q" =================================
+Started runs at: Tue Oct  8 15:37:39 EDT 2013
+sys161 -c sys161-512K-1P.conf kernel "uw1;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+OS/161 kernel: uw1
+Starting uwlocktest1...
+value of test_value = 0 should be 0
+TEST SUCCEEDED
+cleanitems: Destroying sems and locks
+uwlocktest1 done.
+Operation took 23.353612600 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+sys161: 588359161 cycles (588359161 run, 0 global-idle)
+sys161:   cpu0: 588359161 kern, 0 user, 0 idle)
+sys161: 235027 irqs 0 exns 0r/0w disk 0r/755w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 25.382586 seconds (23.1796 mhz)
+sys161: Elapsed virtual time: 23.534366440 seconds (25 mhz)
+
+sys161 -c sys161-512K-4P.conf kernel "uw1;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: uw1
+Starting uwlocktest1...
+value of test_value = 0 should be 0
+TEST SUCCEEDED
+cleanitems: Destroying sems and locks
+uwlocktest1 done.
+Operation took 9.746038160 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+sys161: 248453243 cycles (248453243 run, 0 global-idle)
+sys161:   cpu0: 181755763 kern, 0 user, 66697480 idle)
+sys161:   cpu1: 171025505 kern, 0 user, 77427738 idle)
+sys161:   cpu2: 149761331 kern, 0 user, 98691912 idle)
+sys161:   cpu3: 118788737 kern, 0 user, 129664506 idle)
+sys161: 290203 irqs 0 exns 0r/0w disk 0r/850w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 28.099579 seconds (8.84188 mhz)
+sys161: Elapsed virtual time: 9.938129720 seconds (25 mhz)
+
+sys161 -c sys161-512K-8P.conf kernel "uw1;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+cpu4: MIPS r3000
+cpu5: MIPS r3000
+cpu6: MIPS r3000
+cpu7: MIPS r3000
+OS/161 kernel: uw1
+Starting uwlocktest1...
+value of test_value = 0 should be 0
+TEST SUCCEEDED
+cleanitems: Destroying sems and locks
+uwlocktest1 done.
+Operation took 8.730582480 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+cpu7: offline.
+cpu6: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+cpu4: offline.
+cpu5: offline.
+sys161: 223473806 cycles (223473806 run, 0 global-idle)
+sys161:   cpu0: 130337142 kern, 0 user, 93136664 idle)
+sys161:   cpu1: 113178854 kern, 0 user, 110294952 idle)
+sys161:   cpu2: 93351181 kern, 0 user, 130122625 idle)
+sys161:   cpu3: 89477648 kern, 0 user, 133996158 idle)
+sys161:   cpu4: 85776508 kern, 0 user, 137697298 idle)
+sys161:   cpu5: 85248206 kern, 0 user, 138225600 idle)
+sys161:   cpu6: 84772232 kern, 0 user, 138701574 idle)
+sys161:   cpu7: 277313 kern, 0 user, 223196493 idle)
+sys161: 331384 irqs 0 exns 0r/0w disk 0r/978w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 34.520765 seconds (6.47361 mhz)
+sys161: Elapsed virtual time: 8.938952240 seconds (25 mhz)
+
+Ended runs at: Tue Oct  8 15:39:07 EDT 2013
+
+
+######################################################################
+./run-on-configs locks.cmds sys161-512K-1P.conf sys161-512K-4P.conf sys161-512K-8P.conf
+========================== Using parameters "sy2;q" =================================
+Started runs at: Tue Oct  8 15:39:07 EDT 2013
+sys161 -c sys161-512K-1P.conf kernel "sy2;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 1.630472680 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+sys161: 45281751 cycles (45281751 run, 0 global-idle)
+sys161:   cpu0: 45281751 kern, 0 user, 0 idle)
+sys161: 17725 irqs 0 exns 0r/0w disk 0r/705w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 1.982161 seconds (22.8446 mhz)
+sys161: Elapsed virtual time: 1.811270040 seconds (25 mhz)
+
+sys161 -c sys161-512K-4P.conf kernel "sy2;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 0.694340200 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu1: offline.
+The system is halted.
+sys161: 22070197 cycles (22070197 run, 0 global-idle)
+sys161:   cpu0: 17875068 kern, 0 user, 4195129 idle)
+sys161:   cpu1: 12629235 kern, 0 user, 9440962 idle)
+sys161:   cpu2: 11957175 kern, 0 user, 10113022 idle)
+sys161:   cpu3: 10637010 kern, 0 user, 11433187 idle)
+sys161: 22638 irqs 0 exns 0r/0w disk 0r/801w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 2.422767 seconds (9.1095 mhz)
+sys161: Elapsed virtual time: 0.882807880 seconds (25 mhz)
+
+sys161 -c sys161-512K-8P.conf kernel "sy2;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+cpu4: MIPS r3000
+cpu5: MIPS r3000
+cpu6: MIPS r3000
+cpu7: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 0.546059840 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+cpu7: offline.
+cpu6: offline.
+The system is halted.
+cpu2: offline.
+cpu3: offline.
+cpu4: offline.
+cpu5: offline.
+sys161: 18867003 cycles (18867003 run, 0 global-idle)
+sys161:   cpu0: 13989441 kern, 0 user, 4877562 idle)
+sys161:   cpu1: 8340038 kern, 0 user, 10526965 idle)
+sys161:   cpu2: 5105517 kern, 0 user, 13761486 idle)
+sys161:   cpu3: 6304135 kern, 0 user, 12562868 idle)
+sys161:   cpu4: 5968817 kern, 0 user, 12898186 idle)
+sys161:   cpu5: 4615629 kern, 0 user, 14251374 idle)
+sys161:   cpu6: 4419858 kern, 0 user, 14447145 idle)
+sys161:   cpu7: 3265321 kern, 0 user, 15601682 idle)
+sys161: 22049 irqs 0 exns 0r/0w disk 0r/929w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 2.680636 seconds (7.03826 mhz)
+sys161: Elapsed virtual time: 0.754680120 seconds (25 mhz)
+
+Ended runs at: Tue Oct  8 15:39:14 EDT 2013
+
+========================== Using parameters "sy2;q" =================================
+Started runs at: Tue Oct  8 15:39:14 EDT 2013
+sys161 -c sys161-512K-1P.conf kernel "sy2;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 1.721559760 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+sys161: 47516578 cycles (47516578 run, 0 global-idle)
+sys161:   cpu0: 47516578 kern, 0 user, 0 idle)
+sys161: 18625 irqs 0 exns 0r/0w disk 0r/705w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 2.099439 seconds (22.633 mhz)
+sys161: Elapsed virtual time: 1.900663120 seconds (25 mhz)
+
+sys161 -c sys161-512K-4P.conf kernel "sy2;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 0.698050040 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu1: offline.
+cpu2: offline.
+The system is halted.
+sys161: 22160309 cycles (22160309 run, 0 global-idle)
+sys161:   cpu0: 17906532 kern, 0 user, 4253777 idle)
+sys161:   cpu1: 12559369 kern, 0 user, 9600940 idle)
+sys161:   cpu2: 11777480 kern, 0 user, 10382829 idle)
+sys161:   cpu3: 10439199 kern, 0 user, 11721110 idle)
+sys161: 22380 irqs 0 exns 0r/0w disk 0r/801w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 2.372391 seconds (9.34092 mhz)
+sys161: Elapsed virtual time: 0.886412360 seconds (25 mhz)
+
+sys161 -c sys161-512K-8P.conf kernel "sy2;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+cpu4: MIPS r3000
+cpu5: MIPS r3000
+cpu6: MIPS r3000
+cpu7: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 0.548686680 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu7: offline.
+cpu1: offline.
+cpu5: offline.
+The system is halted.
+cpu6: offline.
+cpu2: offline.
+sys161: 18888820 cycles (18888820 run, 0 global-idle)
+sys161:   cpu0: 13469330 kern, 0 user, 5419490 idle)
+sys161:   cpu1: 7364391 kern, 0 user, 11524429 idle)
+sys161:   cpu2: 5905023 kern, 0 user, 12983797 idle)
+sys161:   cpu3: 4497359 kern, 0 user, 14391461 idle)
+sys161:   cpu4: 6166671 kern, 0 user, 12722149 idle)
+sys161:   cpu5: 6292133 kern, 0 user, 12596687 idle)
+sys161:   cpu6: 6105673 kern, 0 user, 12783147 idle)
+sys161:   cpu7: 5097747 kern, 0 user, 13791073 idle)
+sys161: 23169 irqs 0 exns 0r/0w disk 0r/929w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 2.746370 seconds (6.87774 mhz)
+sys161: Elapsed virtual time: 0.755552800 seconds (25 mhz)
+
+Ended runs at: Tue Oct  8 15:39:21 EDT 2013
+
+========================== Using parameters "sy2;q" =================================
+Started runs at: Tue Oct  8 15:39:21 EDT 2013
+sys161 -c sys161-512K-1P.conf kernel "sy2;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 1.803525160 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+sys161: 49573118 cycles (49573118 run, 0 global-idle)
+sys161:   cpu0: 49573118 kern, 0 user, 0 idle)
+sys161: 19445 irqs 0 exns 0r/0w disk 0r/705w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 2.160103 seconds (22.9494 mhz)
+sys161: Elapsed virtual time: 1.982924720 seconds (25 mhz)
+
+sys161 -c sys161-512K-4P.conf kernel "sy2;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 0.674962600 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+cpu2: offline.
+The system is halted.
+sys161: 21593159 cycles (21593159 run, 0 global-idle)
+sys161:   cpu0: 17889004 kern, 0 user, 3704155 idle)
+sys161:   cpu1: 13273919 kern, 0 user, 8319240 idle)
+sys161:   cpu2: 11490712 kern, 0 user, 10102447 idle)
+sys161:   cpu3: 8978753 kern, 0 user, 12614406 idle)
+sys161: 21926 irqs 0 exns 0r/0w disk 0r/801w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 2.332714 seconds (9.25667 mhz)
+sys161: Elapsed virtual time: 0.863726360 seconds (25 mhz)
+
+sys161 -c sys161-512K-8P.conf kernel "sy2;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+cpu4: MIPS r3000
+cpu5: MIPS r3000
+cpu6: MIPS r3000
+cpu7: MIPS r3000
+OS/161 kernel: sy2
+Starting lock test...
+cleanitems: Destroying sems, locks, and cvs
+Lock test done.
+Operation took 0.534211040 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu7: offline.
+cpu5: offline.
+cpu6: offline.
+cpu1: offline.
+cpu2: offline.
+sys161: 18457192 cycles (18457192 run, 0 global-idle)
+sys161:   cpu0: 12383365 kern, 0 user, 6073827 idle)
+sys161:   cpu1: 6531955 kern, 0 user, 11925237 idle)
+sys161:   cpu2: 6574053 kern, 0 user, 11883139 idle)
+sys161:   cpu3: 5602416 kern, 0 user, 12854776 idle)
+sys161:   cpu4: 7574265 kern, 0 user, 10882927 idle)
+sys161:   cpu5: 5772127 kern, 0 user, 12685065 idle)
+sys161:   cpu6: 4113661 kern, 0 user, 14343531 idle)
+sys161:   cpu7: 4155005 kern, 0 user, 14302187 idle)
+sys161: 22503 irqs 0 exns 0r/0w disk 0r/929w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 2.694088 seconds (6.851 mhz)
+sys161: Elapsed virtual time: 0.738287680 seconds (25 mhz)
+
+Ended runs at: Tue Oct  8 15:39:28 EDT 2013
+
+
+######################################################################
+./run-on-configs condvars.cmds sys161-512K-1P.conf sys161-512K-4P.conf sys161-512K-8P.conf
+========================== Using parameters "sy3;q" =================================
+Started runs at: Tue Oct  8 15:39:28 EDT 2013
+sys161 -c sys161-512K-1P.conf kernel "sy3;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+OS/161 kernel: sy3
+Starting CV test...
+Threads should print out in reverse order.
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+cleanitems: Destroying sems, locks, and cvs
+CV test done
+Operation took 2.378623240 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+sys161: 63966774 cycles (63966774 run, 0 global-idle)
+sys161:   cpu0: 63966774 kern, 0 user, 0 idle)
+sys161: 25962 irqs 0 exns 0r/0w disk 0r/2293w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 2.848193 seconds (22.4587 mhz)
+sys161: Elapsed virtual time: 2.558670960 seconds (25 mhz)
+
+sys161 -c sys161-512K-4P.conf kernel "sy3;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sy3
+Starting CV test...
+Threads should print out in reverse order.
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+cleanitems: Destroying sems, locks, and cvs
+CV test done
+Operation took 1.780250160 seconds
+OS/161 kernel: q
+Shutting down.
+cpu1: offline.
+The system is halted.
+cpu3: offline.
+cpu2: offline.
+sys161: 49294325 cycles (49294325 run, 0 global-idle)
+sys161:   cpu0: 36141171 kern, 0 user, 13153154 idle)
+sys161:   cpu1: 16425009 kern, 0 user, 32869316 idle)
+sys161:   cpu2: 11212224 kern, 0 user, 38082101 idle)
+sys161:   cpu3: 3853840 kern, 0 user, 45440485 idle)
+sys161: 31075 irqs 0 exns 0r/0w disk 0r/2389w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 3.766246 seconds (13.0885 mhz)
+sys161: Elapsed virtual time: 1.971773000 seconds (25 mhz)
+
+sys161 -c sys161-512K-8P.conf kernel "sy3;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+cpu4: MIPS r3000
+cpu5: MIPS r3000
+cpu6: MIPS r3000
+cpu7: MIPS r3000
+OS/161 kernel: sy3
+Starting CV test...
+Threads should print out in reverse order.
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+cleanitems: Destroying sems, locks, and cvs
+CV test done
+Operation took 1.536933800 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu2: offline.
+cpu7: offline.
+cpu5: offline.
+cpu4: offline.
+cpu6: offline.
+The system is halted.
+cpu3: offline.
+sys161: 43598255 cycles (43598255 run, 0 global-idle)
+sys161:   cpu0: 23925561 kern, 0 user, 19672694 idle)
+sys161:   cpu1: 9598255 kern, 0 user, 34000000 idle)
+sys161:   cpu2: 12798180 kern, 0 user, 30800075 idle)
+sys161:   cpu3: 6717920 kern, 0 user, 36880335 idle)
+sys161:   cpu4: 4828289 kern, 0 user, 38769966 idle)
+sys161:   cpu5: 6155834 kern, 0 user, 37442421 idle)
+sys161:   cpu6: 9534561 kern, 0 user, 34063694 idle)
+sys161:   cpu7: 3534692 kern, 0 user, 40063563 idle)
+sys161: 35178 irqs 0 exns 0r/0w disk 0r/2517w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 4.699177 seconds (9.27785 mhz)
+sys161: Elapsed virtual time: 1.743930200 seconds (25 mhz)
+
+Ended runs at: Tue Oct  8 15:39:40 EDT 2013
+
+========================== Using parameters "sy3;q" =================================
+Started runs at: Tue Oct  8 15:39:40 EDT 2013
+sys161 -c sys161-512K-1P.conf kernel "sy3;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+OS/161 kernel: sy3
+Starting CV test...
+Threads should print out in reverse order.
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+cleanitems: Destroying sems, locks, and cvs
+CV test done
+Operation took 2.328199520 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+sys161: 62689379 cycles (62689379 run, 0 global-idle)
+sys161:   cpu0: 62689379 kern, 0 user, 0 idle)
+sys161: 25498 irqs 0 exns 0r/0w disk 0r/2293w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 2.787866 seconds (22.4865 mhz)
+sys161: Elapsed virtual time: 2.507575160 seconds (25 mhz)
+
+sys161 -c sys161-512K-4P.conf kernel "sy3;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sy3
+Starting CV test...
+Threads should print out in reverse order.
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+cleanitems: Destroying sems, locks, and cvs
+CV test done
+Operation took 1.645980160 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu1: offline.
+cpu2: offline.
+The system is halted.
+sys161: 45854412 cycles (45854412 run, 0 global-idle)
+sys161:   cpu0: 30479874 kern, 0 user, 15374538 idle)
+sys161:   cpu1: 19923500 kern, 0 user, 25930912 idle)
+sys161:   cpu2: 12396512 kern, 0 user, 33457900 idle)
+sys161:   cpu3: 13573714 kern, 0 user, 32280698 idle)
+sys161: 34959 irqs 0 exns 0r/0w disk 0r/2389w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 3.916092 seconds (11.7092 mhz)
+sys161: Elapsed virtual time: 1.834176480 seconds (25 mhz)
+
+sys161 -c sys161-512K-8P.conf kernel "sy3;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+cpu4: MIPS r3000
+cpu5: MIPS r3000
+cpu6: MIPS r3000
+cpu7: MIPS r3000
+OS/161 kernel: sy3
+Starting CV test...
+Threads should print out in reverse order.
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+cleanitems: Destroying sems, locks, and cvs
+CV test done
+Operation took 1.519859800 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu2: offline.
+cpu7: offline.
+cpu5: offline.
+The system is halted.
+cpu6: offline.
+cpu3: offline.
+cpu4: offline.
+sys161: 43133505 cycles (43133505 run, 0 global-idle)
+sys161:   cpu0: 22509484 kern, 0 user, 20624021 idle)
+sys161:   cpu1: 9902856 kern, 0 user, 33230649 idle)
+sys161:   cpu2: 8070073 kern, 0 user, 35063432 idle)
+sys161:   cpu3: 9085802 kern, 0 user, 34047703 idle)
+sys161:   cpu4: 5705122 kern, 0 user, 37428383 idle)
+sys161:   cpu5: 9292784 kern, 0 user, 33840721 idle)
+sys161:   cpu6: 6430759 kern, 0 user, 36702746 idle)
+sys161:   cpu7: 5699924 kern, 0 user, 37433581 idle)
+sys161: 35164 irqs 0 exns 0r/0w disk 0r/2517w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 4.683273 seconds (9.21012 mhz)
+sys161: Elapsed virtual time: 1.725340200 seconds (25 mhz)
+
+Ended runs at: Tue Oct  8 15:39:51 EDT 2013
+
+========================== Using parameters "sy3;q" =================================
+Started runs at: Tue Oct  8 15:39:51 EDT 2013
+sys161 -c sys161-512K-1P.conf kernel "sy3;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+OS/161 kernel: sy3
+Starting CV test...
+Threads should print out in reverse order.
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+cleanitems: Destroying sems, locks, and cvs
+CV test done
+Operation took 2.429870200 seconds
+OS/161 kernel: q
+Shutting down.
+The system is halted.
+sys161: 65230986 cycles (65230986 run, 0 global-idle)
+sys161:   cpu0: 65230986 kern, 0 user, 0 idle)
+sys161: 26490 irqs 0 exns 0r/0w disk 0r/2293w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 2.884558 seconds (22.6139 mhz)
+sys161: Elapsed virtual time: 2.609239440 seconds (25 mhz)
+
+sys161 -c sys161-512K-4P.conf kernel "sy3;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+OS/161 kernel: sy3
+Starting CV test...
+Threads should print out in reverse order.
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+cleanitems: Destroying sems, locks, and cvs
+CV test done
+Operation took 1.812835800 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+cpu3: offline.
+The system is halted.
+cpu2: offline.
+sys161: 50011023 cycles (50011023 run, 0 global-idle)
+sys161:   cpu0: 36799509 kern, 0 user, 13211514 idle)
+sys161:   cpu1: 18029839 kern, 0 user, 31981184 idle)
+sys161:   cpu2: 11473357 kern, 0 user, 38537666 idle)
+sys161:   cpu3: 2872543 kern, 0 user, 47138480 idle)
+sys161: 31939 irqs 0 exns 0r/0w disk 0r/2389w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 3.841087 seconds (13.02 mhz)
+sys161: Elapsed virtual time: 2.000440920 seconds (25 mhz)
+
+sys161 -c sys161-512K-8P.conf kernel "sy3;q"
+
+
+Put-your-group-name-here's system version 0 (ASST1 #72)
+
+300k physical memory available
+
+cpu0: MIPS r3000
+cpu1: MIPS r3000
+cpu2: MIPS r3000
+cpu3: MIPS r3000
+cpu4: MIPS r3000
+cpu5: MIPS r3000
+cpu6: MIPS r3000
+cpu7: MIPS r3000
+OS/161 kernel: sy3
+Starting CV test...
+Threads should print out in reverse order.
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+Thread 31
+Thread 30
+Thread 29
+Thread 28
+Thread 27
+Thread 26
+Thread 25
+Thread 24
+Thread 23
+Thread 22
+Thread 21
+Thread 20
+Thread 19
+Thread 18
+Thread 17
+Thread 16
+Thread 15
+Thread 14
+Thread 13
+Thread 12
+Thread 11
+Thread 10
+Thread 9
+Thread 8
+Thread 7
+Thread 6
+Thread 5
+Thread 4
+Thread 3
+Thread 2
+Thread 1
+Thread 0
+cleanitems: Destroying sems, locks, and cvs
+CV test done
+Operation took 1.455220720 seconds
+OS/161 kernel: q
+Shutting down.
+cpu0: offline.
+The system is halted.
+cpu4: offline.
+cpu7: offline.
+cpu5: offline.
+cpu6: offline.
+cpu1: offline.
+cpu2: offline.
+sys161: 41466019 cycles (41466019 run, 0 global-idle)
+sys161:   cpu0: 23244539 kern, 0 user, 18221480 idle)
+sys161:   cpu1: 10236671 kern, 0 user, 31229348 idle)
+sys161:   cpu2: 9450586 kern, 0 user, 32015433 idle)
+sys161:   cpu3: 5522854 kern, 0 user, 35943165 idle)
+sys161:   cpu4: 6486077 kern, 0 user, 34979942 idle)
+sys161:   cpu5: 7359130 kern, 0 user, 34106889 idle)
+sys161:   cpu6: 5421933 kern, 0 user, 36044086 idle)
+sys161:   cpu7: 5666154 kern, 0 user, 35799865 idle)
+sys161: 33781 irqs 0 exns 0r/0w disk 0r/2517w console 0r/0w/1m emufs 0r/0w net
+sys161: Elapsed real time: 4.485909 seconds (9.24362 mhz)
+sys161: Elapsed virtual time: 1.658640760 seconds (25 mhz)
+
+Ended runs at: Tue Oct  8 15:40:02 EDT 2013
+
+
+######################################################################
+./run-on-configs catmouse.cmds sys161-512K-1P.conf sys161-512K-4P.conf sys161-512K-8P.conf
+========================== Using parameters "sp2 4 7 7 3 0 0 0 0;q" =================================
+Started runs at: Tue Oct  8 15:40:02 EDT 2013
+sys161 -c sys161-512K-1P.conf kernel "sp2 4 7 7 3 0 0 0 0;q"
