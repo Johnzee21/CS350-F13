@@ -38,3 +38,6 @@ write(int fd, const void *buf, size_t nbytes){
     FD->f_offset=u.uio_offset;
     return 0;
 }
+
+
+//....................
