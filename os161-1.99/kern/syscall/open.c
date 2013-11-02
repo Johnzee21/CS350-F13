@@ -56,4 +56,4 @@ open(const char *filename, int flags){
      }
      return FD;
 }
-
+//.........
