@@ -92,19 +92,25 @@ cmd_progthread(void *ptr, unsigned long nargs)
 
 	KASSERT(nargs >= 1);
 
-	if (nargs > 2) {
-		kprintf("Warning: argument passing from menu not supported\n");
-	}
+	// if (nargs > 2) {
+	// 	kprintf("Warning: argument passing from menu not supported\n");
+	// }
 
 	/* Hope we fit. */
 	KASSERT(strlen(args[0]) < sizeof(progname));
 
 	strcpy(progname, args[0]);
-
+#if OPT_A2
+	result = runprogram(progname, nargs, args);
+#else
 	result = runprogram(progname);
+#endif
 	if (result) {
 		kprintf("Running program %s failed: %s\n", args[0],
 			strerror(result));
+#if OPT_A2
+	_exit(0);
+#endif
 		return;
 	}
 
@@ -621,7 +627,7 @@ cmd_dispatch(char *cmd)
 			gettime(&beforesecs, &beforensecs);
 
 			result = cmdtable[i].func(nargs, args);
-
+			while(1);
 			gettime(&aftersecs, &afternsecs);
 			getinterval(beforesecs, beforensecs,
 				    aftersecs, afternsecs,
